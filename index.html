@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>Database process documentation</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="svg.css">
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+        <div class="unsupported-browser">
+            This website does not fully support your browser.  Please get a
+            better browser (Firefox or <a href="/chrome/">Chrome</a>, or if you
+            must use Internet Explorer, make it version 9 or greater).
+        </div>
+        <![endif]-->
+        <div id="split-container">
+            <div id="graph-container">
+                <div id="graph"></div>
+            </div>
+            <div id="docs-container">
+                <a id="docs-close" href="#">&times;</a>
+                <div id="docs" class="docs"></div>
+            </div>
+        </div>
+        <script src="jquery/jquery-1.10.2.min.js"></script>
+        <script src="d3/d3.v3.min.js"></script>
+        <script src="colorbrewer.js"></script>
+        <script src="lib/geometry.js"></script>
+        <script>
+            var config = {
+				"title":"NSA programs",
+				"graph":{
+					"linkDistance":20,
+					"charge":-300,
+					"height":1500,
+					"numColors":12,
+					"labelPadding":{"left":3,"right":3,"top":2,"bottom":2},
+					"labelMargin":{"left":3,"right":3,"top":2,"bottom":2},
+					"ticksWithoutCollisions":50
+				},
+				"types":{
+					"view":{"short":"View","long":"Database view"},
+					"table":{"short":"Table","long":"Database table"},
+					"query":{"short":"Query","long":"Database query"},
+					"sas":{"short":"SAS project","long":"SAS project"},
+					"extract":{"short":"ETL process","long":"Extract-transform-load process"},
+					"database":{"short":"Access database","long":"Access database"},
+					"report":{"short":"Report","long":"Report"}
+				},
+				"constraints":[
+					{"has":{"name":"TAO"},"type":"position","x":0.10,"y":0.10,"weight":0.7},
+					{"has":{"name":"PRISM"},"type":"position","x":0.5,"y":0.10,"weight":0.7},
+					{"has":{"name":"BULLRUN"},"type":"position","x":0.75,"y":0.10,"weight":0.7},
+					{"has":{"name":"UPSTREAM"},"type":"position","x":0.10,"y":0.30,"weight":0.7},
+				],
+				"jsonUrl":"json"};
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

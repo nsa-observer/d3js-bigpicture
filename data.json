@@ -1,0 +1,90 @@
+{ "constraints" : [ { "has" : { "type" : "group1" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.20000000000000001,
+        "y" : 0.20000000000000001
+      },
+      { "has" : { "type" : "group2" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.80000000000000004,
+        "y" : 0.20000000000000001
+      },
+      { "has" : { "type" : "group3" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.20000000000000001,
+        "y" : 0.5
+      },
+      { "has" : { "type" : "group4" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.80000000000000004,
+        "y" : 0.5
+      },
+      { "has" : { "type" : "group5" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.20000000000000001,
+        "y" : 0.80000000000000004
+      },
+      { "has" : { "type" : "group8" },
+        "type" : "position",
+        "weight" : 0.69999999999999996,
+        "x" : 0.80000000000000004,
+        "y" : 0.80000000000000004
+      }
+    ],
+  "graph" : { "charge" : -400,
+      "height" : 800,
+      "labelMargin" : { "bottom" : 2,
+          "left" : 3,
+          "right" : 3,
+          "top" : 2
+        },
+      "labelPadding" : { "bottom" : 2,
+          "left" : 3,
+          "right" : 3,
+          "top" : 2
+        },
+      "linkDistance" : 150,
+      "numColors" : 12,
+      "ticksWithoutCollisions" : 50
+    },
+  "jsonUrl" : "json.php?dataset=les-mis",
+  "title" : "Les Miserables characters",
+  "types" : { "group0" : { "long" : "Group 0 long name for docs",
+          "short" : "Group 0"
+        },
+      "group1" : { "long" : "Group 1 long name for docs",
+          "short" : "Group 1"
+        },
+      "group10" : { "long" : "Group 10 long name for docs",
+          "short" : "Group 10"
+        },
+      "group2" : { "long" : "Group 2 long name for docs",
+          "short" : "Group 2"
+        },
+      "group3" : { "long" : "Group 3 long name for docs",
+          "short" : "Group 3"
+        },
+      "group4" : { "long" : "Group 4 long name for docs",
+          "short" : "Group 4"
+        },
+      "group5" : { "long" : "Group 5 long name for docs",
+          "short" : "Group 5"
+        },
+      "group6" : { "long" : "Group 6 long name for docs",
+          "short" : "Group 6"
+        },
+      "group7" : { "long" : "Group 7 long name for docs",
+          "short" : "Group 7"
+        },
+      "group8" : { "long" : "Group 8 long name for docs",
+          "short" : "Group 8"
+        },
+      "group9" : { "long" : "Group 9 long name for docs",
+          "short" : "Group 9"
+        }
+    }
+}
