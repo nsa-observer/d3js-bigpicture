@@ -4,6 +4,14 @@ This is a PHP web application that displays a directed acyclic graph in a
 modern web browser using [d3.js](http://d3js.org/).  It is designed for
 illustrating the relationships between objects in a process.
 
+
+# For NSA-observer:
+
+* download the [last version](https://www.nsa-observer.net/api/export/json) of the database.
+* remplace orig.json with the new version
+* launch process.rb
+* profits (for the moment you can see here: [cyphercat.eu/d3js/](http://www.cyphercat.eu/d3js/)
+
 ### Examples
 
 #### Data manipulation and reporting process:
@@ -11,11 +19,6 @@ illustrating the relationships between objects in a process.
 
 [![Default dataset](http://nylen.tv/d3-process-map/img/thumb-default.png)](http://nylen.tv/d3-process-map/)
 http://nylen.tv/d3-process-map/
-
-#### Co-occurrences of Les Miserables characters:
-
-[![Les Mis dataset](http://nylen.tv/d3-process-map/img/thumb-les-mis.png)](http://nylen.tv/d3-process-map/?dataset=les-mis)
-http://nylen.tv/d3-process-map/?dataset=les-mis
 
 ### Features
 
