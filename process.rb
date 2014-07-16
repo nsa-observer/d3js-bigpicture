@@ -10,7 +10,7 @@ orig.each do |program|
 		type: program['family'],
 #		group: program['category'],
 #		type: program['family'],
-		depends: program['relatedItemsParents'].collect do |parent|
+		depends: (program['relatedItemsParents'] || []).collect do |parent|
 			parent.gsub(/\[\[(.*)\]\]/, '\\1').strip
 		end
 	}
